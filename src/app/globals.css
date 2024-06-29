@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+@keyframes flowGradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.footer {
+  background-color: #181818;
+  text-align: center;
+  color: white;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer a:hover {
+  color: #ddd;
+}
+
+.footer > .w-full:first-child {
+  border-top: 1px solid #33353F;
+}
+
+.footer > .w-full:last-child {
+  border-top: none;
+}
+
+
+
+
+.gradient-flow {
+  background: linear-gradient(45deg, #7c3aed, #ff007f, #3740ff); /* Your gradient colors */
+  background-size: 200% 200%;
+  animation: flowGradient 3s ease infinite; /* Adjust animation duration as needed */
+}
+
+
+
+.color-change-animation {
+  animation: colorChange 10s infinite alternate;
+}
+
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 3s linear infinite;
+}
+
+.footer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
