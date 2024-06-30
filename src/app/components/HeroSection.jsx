@@ -46,8 +46,8 @@ const HeroSection = () => {
               web development to further my growth and contribute to innovative projects.
               Let&apos;s connect and create something amazing together!
             </p>
-            <div className="flex justify-center lg:justify-start">
-              <Link
+            <div>
+            <Link
                 href="/#contact"
                 className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
               >
