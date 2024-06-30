@@ -11,16 +11,14 @@ import EmailIcon from "../../../public/email-icon.png";
 const EmailSection = () => {
   return (
     <section id="contact" className="py-10 text-center rounded-lg container mx-auto bg-white bg-opacity-10 p-8 my-20 rounded-lg gradient-flow">
-      {/* Added margin-bottom to create a gap between contact section and the next section */}
       <div className="container mx-auto bg-white bg-opacity-20 p-8 rounded-lg mb-1">
-        {/* Added margin-bottom to create a gap between "Let's Connect" text and the paragraph */}
         <h2 className="text-4xl font-bold text-white mb-20">Let&apos;s Connect ...</h2>
         <p className="text-[#ADB7BE] mb-8 max-w-md mx-auto text-lg lg:text-xl">
           I&apos;m currently looking for new opportunities, my inbox is always open.
           Whether you have a question or just want to say hi, I&apos;ll try my best to
           get back to you!
         </p>
-        <div className="flex justify-center gap-4">
+        <div className="flex justify-center gap-4 flex-wrap md:flex-nowrap">
           <Link href="https://github.com/cabral0413?tab=repositories" legacyBehavior>
             <a
               target="_blank"
